@@ -27,7 +27,7 @@ const FALLBACK_NORTE_EPISODES = [
     id: "ep-norte-03",
     youtubeId: "dQw4w9WgXcQ",
     title: "Ep. #10 — Liderança Juvenil: De Nampula para o Mundo",
-    description: "António Lápis e Belito Moreira conversam sobre como construir iniciativas culturais com impacto comunitário sustentável.",
+    description: "António Lápis e convidados debatem sobre como construir iniciativas culturais com impacto comunitário sustentável.",
     badge: "LIDERANÇA",
     date: "Há 1 semana",
     duration: "1h 05m",

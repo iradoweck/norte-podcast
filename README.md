@@ -14,7 +14,7 @@ Plataforma Web oficial e interativa do **NortePodcast** e do movimento **BLN (Ba
   - Identidade visual Dark Navy & Cyan Elétrico (`#00E5FF`).
   - Grelha bissemanal de transmissões (Quartas e Domingos).
   - Grid de episódios com Player Modal interativo sem redirecionamento externo.
-  - Manifesto cultural, perfil de liderança (*The Coach CEO & Belito Moreira*) e proposta B2B de patrocínios.
+  - Manifesto cultural, perfil de liderança (*António Lápis / The Coach CEO*) e proposta B2B de patrocínios.
 
 - **🔥 BLN Arena (`bln.html`):**
   - Identidade visual Obsidian Dark & Crimson Flame (`#FF2A36`).
