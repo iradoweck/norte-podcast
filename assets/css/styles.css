@@ -318,6 +318,7 @@ body {
 .hero-title span.highlight {
   background: var(--theme-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -608,6 +609,7 @@ body {
   color: #fff;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -619,6 +621,7 @@ body {
   margin-bottom: 18px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
