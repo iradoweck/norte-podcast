@@ -2,36 +2,157 @@
  * NORTE PODCAST & BLN — MAIN APPLICATION & YOUTUBE FEED MANAGER
  */
 
+// 15 VÍDEOS REAIS RASPAGEM OFICIAL DO CANAL @Nortepodcast
 const FALLBACK_NORTE_EPISODES = [
   {
-    id: "ep-norte-01",
-    youtubeId: "dQw4w9WgXcQ",
-    title: "Ep. #12 — O Futuro da Juventude e Empreendedorismo no Norte de Moçambique",
-    description: "Uma conversa profunda sobre desafios económicos, inovação artística e o poder da voz nortenha com convidados especiais.",
-    badge: "EPISÓDIO RECENTE",
+    id: "norte-01",
+    youtubeId: "-JlBoMRyLIY",
+    title: "MENDYS: PROMOTOR NÃO PODE DEFINIR O MEU CACHE, EU NÃO SOFRO",
+    description: "Mendys em entrevista exclusiva no Norte Podcast debatendo cachês, indústria musical e postura profissional.",
+    badge: "EXCLUSIVO",
     date: "Recente",
-    duration: "1h 14m",
-    thumbnail: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80"
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/-JlBoMRyLIY/hqdefault.jpg"
   },
   {
-    id: "ep-norte-02",
-    youtubeId: "dQw4w9WgXcQ",
-    title: "Ep. #11 — Cultura Macua e Preservação de Raízes em Nampula",
-    description: "Debatendo a evolução da música tradicional, oralidade e o resgate das narrativas ancestrais moçambicanas.",
-    badge: "DEBATE ABERTO",
-    date: "Recente",
-    duration: "58m",
-    thumbnail: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
+    id: "norte-02",
+    youtubeId: "n9XAyzQdNkQ",
+    title: "Norte Podcast | Mendys EP49",
+    description: "Episódio completo #49 com Mendys no estúdio do Norte Podcast em Nampula.",
+    badge: "EPISÓDIO #49",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/n9XAyzQdNkQ/hqdefault.jpg"
   },
   {
-    id: "ep-norte-03",
-    youtubeId: "dQw4w9WgXcQ",
-    title: "Ep. #10 — Liderança Juvenil: De Nampula para o Mundo",
-    description: "António Lápis e convidados debatem sobre como construir iniciativas culturais com impacto comunitário sustentável.",
-    badge: "LIDERANÇA",
-    date: "Recente",
-    duration: "1h 05m",
-    thumbnail: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80"
+    id: "norte-03",
+    youtubeId: "YcsrehWTUfU",
+    title: "Norte Podcast | Bastidores e Destaques Mendys EP49",
+    description: "Momentos marcantes e conversas francas do episódio 49 com o artista Mendys.",
+    badge: "DESTAQUE",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/YcsrehWTUfU/hqdefault.jpg"
+  },
+  {
+    id: "norte-04",
+    youtubeId: "dexPwf2ZRmQ",
+    title: "Norte Podcast | Chapane & Desscyange EP48",
+    description: "Episódio #48 reunindo Chapane e Desscyange para debater cultura, desafios e arte no Norte.",
+    badge: "EPISÓDIO #48",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/dexPwf2ZRmQ/hqdefault.jpg"
+  },
+  {
+    id: "norte-05",
+    youtubeId: "vDFzu5BplIM",
+    title: "Norte Podcast | Nédio Taimo EP47",
+    description: "Entrevista aprofundada com Nédio Taimo sobre liderança, sociedade e visão comunitária.",
+    badge: "EPISÓDIO #47",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/vDFzu5BplIM/hqdefault.jpg"
+  },
+  {
+    id: "norte-06",
+    youtubeId: "eqksZza7CYY",
+    title: "Norte Podcast | Líder dos Turlins EP46",
+    description: "Diálogo aberto com o Líder dos Turlins sobre a evolução do movimento juvenil e cultural.",
+    badge: "EPISÓDIO #46",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/eqksZza7CYY/hqdefault.jpg"
+  },
+  {
+    id: "norte-07",
+    youtubeId: "IwSvdePhJvg",
+    title: "Norte Podcast | Bander Muirec & Maysen Bunekizzy | T3 #45",
+    description: "Episódio #45 com Bander Muirec e Maysen Bunekizzy debatendo a cena contemporânea de Nampula.",
+    badge: "EPISÓDIO #45",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/IwSvdePhJvg/hqdefault.jpg"
+  },
+  {
+    id: "norte-08",
+    youtubeId: "Jnn9099NDrU",
+    title: "Sérgio Maposse | Norte Podcast T3 #44",
+    description: "Reflexão sobre comunicação, trajetórias e desenvolvimento local com Sérgio Maposse.",
+    badge: "EPISÓDIO #44",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/Jnn9099NDrU/hqdefault.jpg"
+  },
+  {
+    id: "norte-09",
+    youtubeId: "2S79OjLIfPA",
+    title: "Logaritmo da Justina | Norte Podcast T3 #43",
+    description: "Episódio #43 com o fenómeno do humor e conteúdo digital 'Logaritmo da Justina'.",
+    badge: "EPISÓDIO #43",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/2S79OjLIfPA/hqdefault.jpg"
+  },
+  {
+    id: "norte-10",
+    youtubeId: "U0FQuNyOQU0",
+    title: "Erica Dance | Norte Podcast T3 #42",
+    description: "Dança, empreendedorismo feminino e superação cultural com Erica Dance.",
+    badge: "EPISÓDIO #42",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/U0FQuNyOQU0/hqdefault.jpg"
+  },
+  {
+    id: "norte-11",
+    youtubeId: "hnAZjxG9cXM",
+    title: "FOI AMOR À PRIMEIRA VISTA | Norte Podcast",
+    description: "Conversas descontraídas sobre relacionamentos, histórias de vida e conexões humanas reais.",
+    badge: "ESPECIAL",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/hnAZjxG9cXM/hqdefault.jpg"
+  },
+  {
+    id: "norte-12",
+    youtubeId: "mgphT5EPe9I",
+    title: "Mariza Bragança: Artistas mendigam para aparecer em cartazes 'Mahala'",
+    description: "Declarações polémicas de Mariza Bragança sobre os bastidores dos grandes eventos em Moçambique.",
+    badge: "DESTAQUE VIRAL",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/mgphT5EPe9I/hqdefault.jpg"
+  },
+  {
+    id: "norte-13",
+    youtubeId: "Oj1LKQY4dqE",
+    title: "Mariza Bragança: Leoklides Soares Não é chamado em shows por ser Arrogante",
+    description: "Análise crítica do mercado musical e posicionamento de artistas com Mariza Bragança.",
+    badge: "CORTE EXCLUSIVO",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/Oj1LKQY4dqE/hqdefault.jpg"
+  },
+  {
+    id: "norte-14",
+    youtubeId: "DAnF1_Du7ds",
+    title: "Mariza Bragança | Norte Podcast T3 #41",
+    description: "Episódio #41 completo com Mariza Bragança no estúdio do Norte Podcast.",
+    badge: "EPISÓDIO #41",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/DAnF1_Du7ds/hqdefault.jpg"
+  },
+  {
+    id: "norte-15",
+    youtubeId: "WujFnACgQBg",
+    title: "DONA LAURA, FECK BIM & NACULETE | Norte Podcast T3 #40",
+    description: "Mesa redonda icónica com Dona Laura, Feck Bim e Naculette na 3ª Temporada.",
+    badge: "EPISÓDIO #40",
+    date: "Temporada 3",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/WujFnACgQBg/hqdefault.jpg"
   }
 ];
 
@@ -194,7 +315,7 @@ class YouTubeFeedManager {
   constructor(apiKey = null, channelId = null) {
     this.apiKey = apiKey;
     this.channelId = channelId;
-    this.cacheKey = "norte_youtube_feed_cache";
+    this.cacheKey = "norte_youtube_feed_cache_v4";
     this.cacheDuration = 1000 * 60 * 60; // 1 hour cache
     this.channelHandles = {
       norte: "@Nortepodcast",
