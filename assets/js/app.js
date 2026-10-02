@@ -5,11 +5,11 @@
 const FALLBACK_NORTE_EPISODES = [
   {
     id: "ep-norte-01",
-    youtubeId: "dQw4w9WgXcQ", // Exemplo / Substituível pelo ID real do canal
+    youtubeId: "dQw4w9WgXcQ",
     title: "Ep. #12 — O Futuro da Juventude e Empreendedorismo no Norte de Moçambique",
     description: "Uma conversa profunda sobre desafios económicos, inovação artística e o poder da voz nortenha com convidados especiais.",
     badge: "EPISÓDIO RECENTE",
-    date: "Há 2 dias",
+    date: "Recente",
     duration: "1h 14m",
     thumbnail: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80"
   },
@@ -19,7 +19,7 @@ const FALLBACK_NORTE_EPISODES = [
     title: "Ep. #11 — Cultura Macua e Preservação de Raízes em Nampula",
     description: "Debatendo a evolução da música tradicional, oralidade e o resgate das narrativas ancestrais moçambicanas.",
     badge: "DEBATE ABERTO",
-    date: "Há 6 dias",
+    date: "Recente",
     duration: "58m",
     thumbnail: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
   },
@@ -29,42 +29,163 @@ const FALLBACK_NORTE_EPISODES = [
     title: "Ep. #10 — Liderança Juvenil: De Nampula para o Mundo",
     description: "António Lápis e convidados debatem sobre como construir iniciativas culturais com impacto comunitário sustentável.",
     badge: "LIDERANÇA",
-    date: "Há 1 semana",
+    date: "Recente",
     duration: "1h 05m",
     thumbnail: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
+// 15 VÍDEOS REAIS RASPAGEM OFICIAL DO CANAL @batalhasliricas
 const FALLBACK_BLN_BATTLES = [
   {
     id: "bln-01",
-    youtubeId: "dQw4w9WgXcQ",
-    title: "BLN Edição 2025 — Grande Final no Salão Nobre de Nampula",
-    description: "A rima mais afiada de Moçambique num confronto épico de métrica, flow e poesia urbana de rua.",
-    badge: "GRANDE FINAL",
-    date: "Há 3 dias",
-    duration: "45m",
-    thumbnail: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+    youtubeId: "m0AE-r5dVUk",
+    title: "BLN APRESENTA: Astro VS Delfim (Trailer) Quartos de Finais",
+    description: "Trailer oficial dos Quartos de Finais da Temporada 2 entre Astro e Delfim nas Batalhas Líricas Nacionais.",
+    badge: "QUARTOS DE FINAL",
+    date: "Recente",
+    duration: "Trailer HD",
+    thumbnail: "https://i.ytimg.com/vi/m0AE-r5dVUk/hqdefault.jpg"
   },
   {
     id: "bln-02",
-    youtubeId: "dQw4w9WgXcQ",
-    title: "Semifinais BLN — Batalhas Líricas ao Vivo no Centro Cultural UR",
-    description: "Confrontos eliminatórios com casa cheia. Duelos líricos sem filtro sob comando de The Coach CEO.",
-    badge: "SEMIFINAL",
-    date: "Há 1 semana",
-    duration: "38m",
-    thumbnail: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+    youtubeId: "cTU1SMhxX4M",
+    title: "#BLN APRESENTA T2: Zetto Divisa Vs Hugo Boss (Batalha Oficial)",
+    description: "Confronto oficial completo da Temporada 2 entre Zetto Divisa e Hugo Boss na arena BLN.",
+    badge: "BATALHA OFICIAL",
+    date: "Temporada 2",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/cTU1SMhxX4M/hqdefault.jpg"
   },
   {
     id: "bln-03",
-    youtubeId: "dQw4w9WgXcQ",
-    title: "Cypher Especial BLN: As Novas Promessas da Rima em Moçambique",
-    description: "Sessão especial de microfone aberto com os melhores talentos revelados na temporada de batalhas.",
-    badge: "CYPHER OFICIAL",
-    date: "Há 2 semanas",
-    duration: "22m",
-    thumbnail: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80"
+    youtubeId: "DBGE00VBBKI",
+    title: "#BLN APRESENTA T2: Hugo VS Zetto Divissa (Trailer)",
+    description: "A prévia e o clima tenso que antecederam a batalha entre Hugo e Zetto Divisa.",
+    badge: "TRAILER OFICIAL",
+    date: "Temporada 2",
+    duration: "Trailer HD",
+    thumbnail: "https://i.ytimg.com/vi/DBGE00VBBKI/hqdefault.jpg"
+  },
+  {
+    id: "bln-04",
+    youtubeId: "bwQlByY3_5o",
+    title: "#BLN APRESENTA T2: Bangladesh Vs Danger (Batalha Oficial)",
+    description: "Duelo épico de punchlines e lírica pura entre Bangladesh e Danger na Temporada 2.",
+    badge: "BATALHA OFICIAL",
+    date: "Temporada 2",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/bwQlByY3_5o/hqdefault.jpg"
+  },
+  {
+    id: "bln-05",
+    youtubeId: "BU5JRgNBY04",
+    title: "#BLN APRESENTA: Bangladesh Vs Danger (Trailer) T2",
+    description: "Trailer promocional do confronto explosivo entre Bangladesh e Danger.",
+    badge: "TRAILER T2",
+    date: "Temporada 2",
+    duration: "Trailer HD",
+    thumbnail: "https://i.ytimg.com/vi/BU5JRgNBY04/hqdefault.jpg"
+  },
+  {
+    id: "bln-06",
+    youtubeId: "bbARgSdHUGE",
+    title: "#BLN APRESENTA T2: Tony Kidd Vs Quilton (Batalha Oficial)",
+    description: "Batalha oficial com rimas contundentes entre Tony Kidd e Quilton na arena do BLN.",
+    badge: "BATALHA OFICIAL",
+    date: "Temporada 2",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/bbARgSdHUGE/hqdefault.jpg"
+  },
+  {
+    id: "bln-07",
+    youtubeId: "L9fWeTNnyQI",
+    title: "#BLN APRESENTA T2: Quiton VS Tony Kid (Trailer Oficial)",
+    description: "Trailer de apresentação para o confronto eletrizante de Tony Kidd vs Quilton.",
+    badge: "TRAILER OFICIAL",
+    date: "Temporada 2",
+    duration: "Trailer HD",
+    thumbnail: "https://i.ytimg.com/vi/L9fWeTNnyQI/hqdefault.jpg"
+  },
+  {
+    id: "bln-08",
+    youtubeId: "BhgFtY_ZMt0",
+    title: "BLN Arena — Duelo Especial de Freestyle",
+    description: "Exibição e confronto especial com plateia vibrante no Salão Nobre de Nampula.",
+    badge: "ARENA ESPECIAL",
+    date: "Ao Vivo",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/BhgFtY_ZMt0/hqdefault.jpg"
+  },
+  {
+    id: "bln-09",
+    youtubeId: "8LpCsiuA18U",
+    title: "Podcast com Gladiadores | Rumo à Final",
+    description: "Mesa redonda exclusiva com os MCs classificados analisando as estratégias para a Grande Final.",
+    badge: "PODCAST BLN",
+    date: "Especial",
+    duration: "Debate",
+    thumbnail: "https://i.ytimg.com/vi/8LpCsiuA18U/hqdefault.jpg"
+  },
+  {
+    id: "bln-10",
+    youtubeId: "Gbzcf_yCYzA",
+    title: "#BLN APRESENTA T2: Paydizzy Vs Toy Flow (Batalha Oficial)",
+    description: "Paydizzy e Toy Flow duelando pelo avanço na tabela classificatória da Temporada 2.",
+    badge: "BATALHA OFICIAL",
+    date: "Temporada 2",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/Gbzcf_yCYzA/hqdefault.jpg"
+  },
+  {
+    id: "bln-11",
+    youtubeId: "EG8WlEXgvEM",
+    title: "#BLN APRESENTA T2: Paydizzy Vs Toy Flow (Trailer)",
+    description: "Prévia com as melhores falas e a expectativa para Paydizzy vs Toy Flow.",
+    badge: "TRAILER T2",
+    date: "Temporada 2",
+    duration: "Trailer HD",
+    thumbnail: "https://i.ytimg.com/vi/EG8WlEXgvEM/hqdefault.jpg"
+  },
+  {
+    id: "bln-12",
+    youtubeId: "qy5qCT3gzu8",
+    title: "#BLN APRESENTA T2: Akasa VS Seiva Bruta (Batalha Oficial)",
+    description: "Um dos duelos líricos mais comentados da fase eliminatória entre Akasa e Seiva Bruta.",
+    badge: "BATALHA OFICIAL",
+    date: "Temporada 2",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/qy5qCT3gzu8/hqdefault.jpg"
+  },
+  {
+    id: "bln-13",
+    youtubeId: "NjdlpFdruBk",
+    title: "#BLN APRESENTA T2: Akassa VS Seyva Bruta (Trailer Oficial)",
+    description: "Trailer oficial anunciando o combate lírico de Akasa vs Seiva Bruta.",
+    badge: "TRAILER OFICIAL",
+    date: "Temporada 2",
+    duration: "Trailer HD",
+    thumbnail: "https://i.ytimg.com/vi/NjdlpFdruBk/hqdefault.jpg"
+  },
+  {
+    id: "bln-14",
+    youtubeId: "IoPhz_W2Twk",
+    title: "#BLN APRESENTA T2: Saguas VS Brizzy (Batalha Oficial) #OitavosDeFinal",
+    description: "Oitavos de Final com métrica pesada entre Saguas e Brizzy na arena BLN.",
+    badge: "OITAVOS DE FINAL",
+    date: "Temporada 2",
+    duration: "Full Video",
+    thumbnail: "https://i.ytimg.com/vi/IoPhz_W2Twk/hqdefault.jpg"
+  },
+  {
+    id: "bln-15",
+    youtubeId: "ks1aPi5M9ks",
+    title: "#BLN APRESENTA T2: Saguas VS Brizzy (Trailer Oficial) #OitavosDeFinal",
+    description: "Trailer oficial dos Oitavos de Final entre Saguas e Brizzy.",
+    badge: "TRAILER OFICIAL",
+    date: "Temporada 2",
+    duration: "Trailer HD",
+    thumbnail: "https://i.ytimg.com/vi/ks1aPi5M9ks/hqdefault.jpg"
   }
 ];
 
@@ -82,11 +203,9 @@ class YouTubeFeedManager {
   }
 
   async getEpisodes(type = "norte") {
-    // Check LocalStorage Cache first
     const cached = this.getCache(type);
     if (cached) return cached;
 
-    // In local development or without API Key, return curated high-fidelity fallback
     if (!this.apiKey || !this.channelId) {
       const data = type === "bln" ? FALLBACK_BLN_BATTLES : FALLBACK_NORTE_EPISODES;
       this.setCache(type, data);
@@ -94,7 +213,6 @@ class YouTubeFeedManager {
     }
 
     try {
-      // 1. Get Uploads playlist ID (1 quota cost)
       const channelRes = await fetch(
         `https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${this.channelId}&key=${this.apiKey}`
       );
@@ -103,9 +221,8 @@ class YouTubeFeedManager {
 
       if (!uploadsPlaylistId) throw new Error("Uploads playlist not found");
 
-      // 2. Fetch Playlist Items
       const playlistRes = await fetch(
-        `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=10&key=${this.apiKey}`
+        `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=15&key=${this.apiKey}`
       );
       const playlistData = await playlistRes.json();
 
@@ -113,14 +230,13 @@ class YouTubeFeedManager {
         id: item.id,
         youtubeId: item.snippet.resourceId.videoId,
         title: item.snippet.title,
-        description: item.snippet.description || "Episódio oficial do Norte Podcast.",
+        description: item.snippet.description || "Episódio oficial do Norte Podcast / BLN.",
         badge: type === "bln" ? "BLN BATALHA" : "EPISÓDIO OFICIAL",
         date: "Recente",
         duration: "Full Video",
         thumbnail: item.snippet.thumbnails?.high?.url || item.snippet.thumbnails?.medium?.url
       }));
 
-      // Filter by type if needed
       if (type === "bln") {
         items = items.filter(i => i.title.toLowerCase().includes("bln") || i.title.toLowerCase().includes("batalha"));
         if (items.length === 0) items = FALLBACK_BLN_BATTLES;
