@@ -63,3 +63,10 @@ __pycache__/
 *.mov
 *.mp3
 *.wav
+
+# Internal Briefings & Master Documents
+nortepodcast_master_profile.md
+Pronpt-norte-podcast.md
+*profile*.md
+*prompt*.md
+
