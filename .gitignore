@@ -1,0 +1,65 @@
+# ==============================================================================
+# .gitignore - NORTE PODCAST / ZEDECKLAB STANDARD
+# ==============================================================================
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-project
+*.sublime-workspace
+
+# Agent & System Metadata (Rule Mandatory)
+.agent/
+.agents/
+.gemini/
+.system_generated/
+*.log
+
+# Dependencies
+node_modules/
+vendor/
+venv/
+.venv/
+env/
+
+# Environment & Sensitive Credentials
+.env
+.env.*
+!.env.example
+
+# Build Outputs & Bundles
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Caches & Temporary Files
+.vite/
+.eslintcache
+.tsbuildinfo
+.turbo/
+__pycache__/
+*.pyc
+
+# Local Databases & Dumps
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+
+# Media & Heavy Binaries
+*.zip
+*.tar.gz
+*.mp4
+*.mov
+*.mp3
+*.wav

@@ -1,0 +1,108 @@
+# ==============================================================================
+# .geminiignore - FINOPS & AI CONTEXT OPTIMIZATION
+# ==============================================================================
+
+# 1. SISTEMA OPERACIONAL E IDES
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.iml
+.gradle/
+local.properties
+.history/
+
+# 2. METADADOS INTERNOS E AGENTES
+.agent/
+.agents/
+.gemini/
+.system_generated/
+
+# 3. DEPENDÊNCIAS & LOCK FILES (FINOPS - ECONOMIA MASSIVA DE TOKENS)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+vendor/
+composer.lock
+venv/
+.venv/
+env/
+poetry.lock
+Cargo.lock
+pubspec.lock
+
+# 4. SEGREDOS E CONFIGURAÇÕES
+.env
+.env.*
+!.env.example
+
+# 5. BUILDS E COMPILADOS
+dist/
+build/
+out/
+target/
+.next/
+.nuxt/
+.output/
+bin/
+obj/
+
+# 6. CACHES DE FERRAMENTAS E RUNTIMES
+.vite/
+.parcel-cache/
+.eslintcache
+.babel-cache/
+.tsbuildinfo
+.turbo/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+
+# 7. ASSETS BINÁRIOS, MULTIMÍDIA E FONTES (PROTEÇÃO DE TOKENS DE VISÃO/BINÁRIOS)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.ico
+*.psd
+*.fig
+*.pdf
+*.zip
+*.tar.gz
+*.woff
+*.woff2
+*.ttf
+*.mp3
+*.wav
+*.mp4
+*.mov
+
+# 8. BANCOS DE DADOS LOCAIS E LOGS
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.sql.gz
+
+# 9. EXECUTÁVEIS E PACOTES
+*.apk
+*.aab
+*.ipa
+*.jar
+*.class
+*.so
+*.dylib
+*.dll
+*.exe
+*.js.map
+*.css.map
